@@ -1,0 +1,338 @@
+/*O estilo foi produzido nos computadores do laboratório 3 do instituto*/
+
+#pai{
+	background-color: #ffffff;
+
+	flex-wrap: wrap;
+	display: flex;
+}
+
+header{
+	background-color: #075d16;
+	width: 100%;
+	height: 17vh;
+	display: flex;
+	flex-direction: row;
+}
+header a{
+	color: #ffffff;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-decoration: none;
+	margin-right: 20px;
+	margin-bottom: 15px;
+}
+
+.yt{
+	border: 0;
+	border-right: solid 2px #ffffff;
+	padding-right: 20px;
+}
+
+.logo{
+	width: 10%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo img{
+	width: 80%;
+	height: 80%;
+	object-fit: contain;
+}
+
+.menu{
+	width: 90%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.meio{
+	width: 100%;
+	height: 71vh;
+
+	display: flex;
+}
+
+#c1{
+	background-color: #DCECE3;
+	width: 39%;
+	height: 95%;
+	margin: 0.8% 2%;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+#c1 h1{
+	color: #000000;
+	font-family: Merriweather, "Times New Roman", serif;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin: 5%;
+}
+#c1 p{
+	color: #000000;
+	text-align: justify;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 504;
+	line-height: 140%;
+	margin: 0% 4%;
+}
+
+#c2{
+	width: 59%;
+	height: 100%;
+	margin: 0.8% 2%;
+	
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+
+#pm{
+	background-color: #dedcec;
+	width: 90%;
+	height: 50%;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#pm h1{
+	color: #000;
+	font-family: "Ribeye Marrow", Merriweather, "Times New Roman", serif;
+	font-size: 53px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin: 2% 4%;
+}
+#pm p{
+	color: #000000;
+	text-align: justify;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 125%;
+	margin: 0 3%;
+}
+
+#om{
+	width: 90%;
+	height: 47%;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+#om div{
+	background-color: #dedcec;
+	width: 30%;
+	height: 82%;
+	margin: 10px;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	box-sizing: border-box;
+}
+#om div h1{
+	color: #000000;
+	font-family: Merriweather, "Times New Roman", serif;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin: 3% 6%;
+}
+#om div h2{
+	color: #000000;
+	font-family: Merriweather, "Times New Roman", serif;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin: 3% 6%;
+}
+#om p{
+	color: #000;
+	text-align: center;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 100%;
+	margin: 56;
+}
+
+footer{
+	background-color: #075d16;
+	width: 100%;
+	height: 12vh;
+	margin-top: auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+footer p{
+	color: #FFFFFF;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin: 5px 0;
+}
+
+#pai2{
+	background-color: #ffffff;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#horizontal1,
+#horizontal2{
+	margin: 2.9%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#horizontal1 img,
+#horizontal2 img{
+	max-width: 100%;
+	height: auto;
+}
+
+
+@media (max-width: 760px){
+	#pai{
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	header{
+		height: auto;
+	}
+
+	.logo img{
+		width: 80%;
+		height: auto;
+	}
+
+	.menu{
+		margin: 5px;
+		flex-direction: column;
+	}
+	.menu a{
+		margin: 10px 10px;
+	}
+
+	.yt{
+		border: 0;
+	}
+
+	.meio{
+		flex-direction: column;
+		align-items: center;
+		margin: 20px 10px;
+	}
+
+	#c1{
+		width: 90vw;
+		margin: 10px auto;
+	}
+
+	#c1 h1{
+		font-size: 30px;
+		margin: 5px;
+		text-align: center; /*Não está centralizando*/
+	}
+
+	#c1 p{
+		font-size: 18px;
+		margin: 5px;
+	}
+
+	#c2{
+		width: 90vw;
+		height: auto;
+		margin: 10px auto;
+	}
+
+	#pm{
+		width: 100%;
+	}
+	#pm h1{
+		font-size: 30px;
+		margin: 5px;
+		text-align: center;
+	}
+
+	#pm p{
+		font-size: 18px;
+		margin: 5px;
+	}
+
+	#om{
+		width: 100%;
+		margin: 10px auto;
+	}
+
+	#om div{
+		width: 100%;
+		height: auto;
+		margin: 8px auto;
+		align-items: center;
+	}
+
+	#om div h1,
+	#om div h2{
+		font-size: 25px;
+		margin: 5px;
+		text-align: center;
+	}
+
+	#om p{
+		font-size: 16px;
+		margin: 5px;
+	}
+
+	footer{
+		height: 12vh; /*Tem algo de errado que faz com que ele não desca, ele está em cima da <div id="pm"*/
+	}
+
+	#pai2{
+		flex-direction: column;
+	}
+/**/
+	#horizontal1,
+	#horizontal2{
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin: 10px;
+	}
+
+	#horizontal1 img,
+	#horizontal2 img{
+		width: 45%;
+		height: auto;
+		margin: 5px;
+	}
+}
